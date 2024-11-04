@@ -52,7 +52,6 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
 }
 
-/* Hero image styling */
 #hero-image {
     display: flex;
     justify-content: center;
@@ -60,11 +59,18 @@ h1 {
     padding: 20px;
 }
 
-/* Hero image styling */
+/* Style for images */
 #hero-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px; /* Rounded corners for images */
+    width: 250px; /* Set a consistent width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Round corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+#hero-image img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 /* Section styling */
