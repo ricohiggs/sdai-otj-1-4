@@ -5,6 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dev Dish Food Truck & Restaurant</title>
     <link rel="stylesheet" href="./styles.css">
+    <style>
+        /* Heading styles */
+        h1 {
+            position: relative; /* For the shadow line */
+            font-size: 2.5em; /* Example font size */
+            margin-bottom: 0.5em; /* Space below the header */
+        }
+
+        h1::after {
+            content: ""; /* Required for the pseudo-element */
+            display: block; /* Make it a block element */
+            height: 4px; /* Thickness of the shadow line */
+            background: rgba(0, 0, 0, 0.2); /* Color of the shadow line */
+            width: 100%; /* Full width of the header */
+            position: absolute; /* Position it absolutely */
+            left: 0; /* Align to the left */
+            bottom: -8px; /* Position below the h1 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional: shadow effect for depth */
+        }
+
+        /* Styles for <h2> and <h3> headings */
+        h2, h3 {
+            position: relative; /* Set position to relative for the line effect */
+            font-size: 2em; /* Font size for <h2> */
+            margin-bottom: 0.5em; /* Space below the header */
+        }
+
+        h2::after, h3::after {
+            content: ""; /* Required for the pseudo-element */
+            display: block; /* Make it a block element */
+            height: 3px; /* Thickness of the line */
+            background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient color for the line */
+            width: 50%; /* Width of the line (you can adjust this) */
+            position: absolute; /* Position it absolutely */
+            left: 0; /* Align to the left */
+            bottom: -5px; /* Position below the heading */
+            border-radius: 2px; /* Optional: rounded edges */
+        }
+
+        /* Adjust specific heading styles if needed */
+        h3 {
+            margin-top: 1.5em; /* Space above <h3> headings */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,10 +68,9 @@
 
     <main>
         <section id="hero-image">
-    <img src="assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="Picture of The Dev Dish Food truck in LA serving their customers in the evening">
-    <img src="assets/images/pexels-edwardeyer-1247755.jpg" alt="The Dev Dish food staff member working on food truck serving hamburgers to customer">
-</section>
-
+            <img src="assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="Picture of The Dev Dish Food truck in LA serving their customers in the evening">
+            <img src="assets/images/pexels-edwardeyer-1247755.jpg" alt="The Dev Dish food staff member working on food truck serving hamburgers to customer">
+        </section>
 
         <section id="about-us"> 
             <h2>About Us</h2> 
@@ -55,7 +98,6 @@
                     
                     <h4>Binary Bites</h4>
                     <p>Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</p>
-                   
                     <h4>Git Wrap Vegetarian</h4>
                     <p>Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</p>
                     
@@ -104,11 +146,4 @@
                 <li><span class="bold">Tuesday:</span> <span class="bold">10am-7pm</span></li>
                 <li><span class="bold">Wednesday:</span> <span class="bold">10am-7pm</span></li>
                 <li><span class="bold">Thursday:</span> <span class="bold">10am-10pm</span></li>
-                <li><span class="bold">Friday:</span> <span class="bold">10am-9pm</span></li>
-                <li><span class="bold">Saturday:</span> <span class="bold">12pm-11pm</span></li>
-                <li><span class="bold">Sunday:</span> <span class="bold">12pm-11pm</span></li>
-            </ul>
-        </section>
-    </main>
-</body>
-</html>
+                <li><span class="bold">Friday:</span
