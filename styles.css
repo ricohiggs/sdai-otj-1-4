@@ -1,3 +1,9 @@
+/* Body gradient background */
+body {
+    background: linear-gradient(to bottom, lightblue, white); /* Gradient from light blue to white */
+    margin: 0; /* Ensures no default margin around the body */
+}
+
 /* Basic styling for the nav */
 nav {
     background-color: #0c7aff;
