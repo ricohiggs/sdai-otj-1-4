@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dev Dish Food Truck & Restaurant</title>
     <link rel="stylesheet" href="./styles.css">
+  <head>
+    <!-- Font Awesome CDN for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Other head content -->
+</head>
     <style>
         /* Heading styles */
         h1 {
@@ -32,7 +37,7 @@
             margin-bottom: 0.5em; /* Space below the header */
         }
 
-        h2::after, h3::after {
+        h2::after {
             content: ""; /* Required for the pseudo-element */
             display: block; /* Make it a block element */
             height: 3px; /* Thickness of the line */
@@ -44,11 +49,25 @@
             border-radius: 2px; /* Optional: rounded edges */
         }
 
+        /* Remove line effect from h3 */
+        /* h3::after {
+            content: ""; 
+            display: block; 
+            height: 3px; 
+            background: linear-gradient(90deg, #ff7e5f, #feb47b); 
+            width: 50%; 
+            position: absolute; 
+            left: 0; 
+            bottom: -5px; 
+            border-radius: 2px; 
+        } */
+
         /* Adjust specific heading styles if needed */
         h3 {
             margin-top: 1.5em; /* Space above <h3> headings */
         }
     </style>
+
 </head>
 <body>
     <header>
@@ -126,6 +145,17 @@
             <h2>The Developer's Favorites</h2>
             <p>Enjoy Dev Dish fan favorite menu items at local events or book us for a visit to your neighborhood or for your special occasion.</p>
         </section>
+    <section id="image-gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+        <img src="https://img.freepik.com/premium-photo/happy-customers-buying-burger-food-truck_380164-230791.jpg" alt="happy customers eating burger in front of food truck" class="gallery-item">
+        <img src="https://st3.depositphotos.com/1017986/17210/i/450/depositphotos_172107276-stock-photo-happy-friends-with-drinks-eating.jpg" alt="happy customers sharing a burger sitting by the food truck" class="gallery-item">
+        <img src="https://as1.ftcdn.net/v2/jpg/02/16/65/54/500_F_216655440_kfFjxCrRi5nM7waFlp6sJRkmrkPKlk6L.jpg" alt="THe Dev Team serving customers outside of truck window" class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QRj0lqzb-yMvuBL-E-apjH7ENcA8QuZNZA&s" alt="Close-up of a delicious burger" class="gallery-item">
+        <img src="https://thumbs.dreamstime.com/b/burger-restaurant-closeup-chef-cooking-burgers-kitchen-burger-restaurant-closeup-chef-cooking-burgers-kitchen-high-118009311.jpg" alt="close up of burger being made inside the food truck" class="gallery-item">
+        <!-- Gallery Ends Here -->
+    </div>
+</section>
 
         <section id="location">
             <h2>Location</h2>
@@ -146,4 +176,26 @@
                 <li><span class="bold">Tuesday:</span> <span class="bold">10am-7pm</span></li>
                 <li><span class="bold">Wednesday:</span> <span class="bold">10am-7pm</span></li>
                 <li><span class="bold">Thursday:</span> <span class="bold">10am-10pm</span></li>
-                <li><span class="bold">Friday:</span
+                <li><span class="bold">Friday:</span> <span class="bold">10am-10pm</span></li>
+            </ul>
+        </section>
+    </main>
+  <footer>
+        <p>&copy; 2024 The Dev Dish Food Truck & Restaurant | Follow us on social media</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
