@@ -9,7 +9,6 @@
             const lightbox = document.createElement('div');
             lightbox.classList.add('lightbox');
             lightbox.innerHTML = `<img src="${imageSrc}" alt="Full-size image" />`;
-
             // Append the lightbox to the body
             document.body.appendChild(lightbox);
 
